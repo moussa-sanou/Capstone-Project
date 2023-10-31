@@ -13,6 +13,9 @@ I applied the architectural design principles in this project to:
 # Step 1: Create Subnet Groups
 - In RDS choose Subnet Groups
     # Subnet Group Details
-  - Name
+  - Name: Social-DB-subnet
+  - Description: Social-DB-subnet
+  - VPC-Select: Example VPC
+  - # Add Subnet
 
 
