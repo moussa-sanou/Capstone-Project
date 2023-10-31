@@ -17,5 +17,10 @@ I applied the architectural design principles in this project to:
   - Description: Social-DB-subnet
   - VPC-Select: Example VPC
   - # Add Subnet
+  - AZ-Select: us-east-1a (private subnet 1)
+  - us-east-1b1b (private subnet 2)
+  - Private subnet1 (10.0.2.0/23)
+  - private subnet 2 (10.0.4.0/23)
+# Step 2: Create Database
 
 
