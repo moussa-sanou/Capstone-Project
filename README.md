@@ -3,3 +3,7 @@
 In this project, I had the opportunity to demonstrate my solution design skills.
 I applied the architectural design principles in this project to:
 - Deploy a PHP application that runs on an Amazon Elastic Compute Cloud (Amazon EC2) instance.
+- Create a database instance that the PHP application can query.
+- Create a MySQL database from an SQL dump file.
+- Update application parameters in an AWS System Manager Parameter Store.
+- Secure the application to prevent public access to backend systems.
