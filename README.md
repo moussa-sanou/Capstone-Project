@@ -13,12 +13,12 @@ I applied the architectural design principles in this project to:
 - Step 1: Create Subnet Groups
     - In RDS choose Subnet Groups
     - Subnet Group Details:
-          - Name: Social-DB-subnet
-          - Description: Social-DB-subnet
-          - VPC-Select: Example VPC
+    - Name: Social-DB-subnet
+    - Description: Social-DB-subnet
+    - VPC-Select: Example VPC
     - Add Subnet:
-          - AZ Select: us-east-1a (private subnet 1)
-          - us-east-1b1b (private subnet 2)
-          - Subnet-select: private subnet1 (10.0.2.0/23) private subnate2 (10.0.4.0/23)
+    - AZ Select: us-east-1a (private subnet 1)
+    - us-east-1b1b (private subnet 2)
+    - Subnet-select: private subnet1 (10.0.2.0/23) private subnate2 (10.0.4.0/23)
 
 
