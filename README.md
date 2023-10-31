@@ -8,6 +8,6 @@ I applied the architectural design principles in this project to:
 - Update application parameters in an AWS System Manager Parameter Store.
 - Secure the application to prevent public access to backend systems.
 # Project Details
-![image](https://github.com/moussa-sanou/Capstone-Project/assets/58495791/ed9283c3-3f60-45d1-807b-e38d249cd34c)=600*600
+![image](https://github.com/moussa-sanou/Capstone-Project/assets/58495791/ed9283c3-3f60-45d1-807b-e38d249cd34c)
 
 
