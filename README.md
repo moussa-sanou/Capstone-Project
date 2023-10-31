@@ -12,5 +12,7 @@ I applied the architectural design principles in this project to:
 # Task 1: Create a MySQL RDS database instance
 # Step 1: Create Subnet Groups
 - In RDS choose Subnet Groups
+    # Subnet Group Details
+  - Name
 
 
