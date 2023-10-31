@@ -10,7 +10,7 @@ I applied the architectural design principles in this project to:
 # Project Details
 ![image](https://github.com/moussa-sanou/Capstone-Project/assets/58495791/ed9283c3-3f60-45d1-807b-e38d249cd34c)
 # Task 1: Create a MySQL RDS database instance
-- Step 1: Create Subnet Groups
+# Step 1: Create Subnet Groups
     - In RDS choose Subnet Groups
     # Subnet Group Details:
     - Name: Social-DB-subnet
