@@ -22,5 +22,29 @@ I applied the architectural design principles in this project to:
   - Private subnet1 (10.0.2.0/23)
   - private subnet 2 (10.0.4.0/23)
 # Step 2: Create Database
+- Navigate RDS Service in AWS and create db instance
+- RDS -> Database -> Create Database
+    # Create database
+  - Choose a database creation method: Standard create
+  - Engine options: Select MySQL
+  - Templates: Dev/Test
+  - Availability and durability: Multi-AZ DB instance
+  - # Settings
+  - DB instance identifier: Example
+  - # Credentials Settings:
+  - Master username: admin
+  - Master password: password
+  - Confirm password: password
+  - # Instance Configuration
+  - DB instance class: Burstable classes (includes t classes)
+  - t3.micro
+  - # Connectivity
+  - Virtual private cloud (VPC): Example VPC
+  - VPC Security Group: Example-DB
+  - # Database options
+  - Initial database name: exampledb
+  - Backup: uncheck it
+  - Monitoring: Disable monitoring
+  - Click Create database
 
 
