@@ -51,7 +51,7 @@ I applied the architectural design principles in this project to:
 - Create cloud environment
     # Step 1: Name environment
   - Name: capstone project
-  - # Step 2: Network settings
+   # Step 2: Network settings
   - Network (VPC): Example VPC
   - Subnet: Public Subnet 2
   - Click Next
