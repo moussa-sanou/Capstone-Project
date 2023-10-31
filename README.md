@@ -56,5 +56,9 @@ I applied the architectural design principles in this project to:
   - Subnet: Public Subnet 2
   - Click Next
   - Create Environment
+# Task 3: Install a LAMP web server on Amazon Linux2 cloud9 instance
+    # Step 1: Prepare the LAMP server
+    
+    
 
 
