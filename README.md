@@ -56,9 +56,21 @@ I applied the architectural design principles in this project to:
   - Subnet: Public Subnet 2
   - Click Next
   - Create Environment
+# Task 2: Create Cloud9 Environment
+- Navigate cloud9
+- Create cloud environment
+    # Step 1: Name environment
+  - Name: capstone project
+   # Step 2: Network settings
+  - Network (VPC): Example VPC
+  - Subnet: Public Subnet 2
+  - Click Next
+  - Create Environment
 # Task 3: Install a LAMP web server on Amazon Linux2 cloud9 instance
 - Open terminal
- # Step 1: Prepare the LAMP server
+-     # st
+       
+
  - sudo yum update -y
  - sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2
  - sudo yum install -y httpd mariadb-server
