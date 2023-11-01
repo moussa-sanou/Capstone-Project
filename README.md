@@ -57,26 +57,28 @@ I applied the architectural design principles in this project to:
   - Click Next
   - Create Environment
 # Task 3: Install a LAMP web server on Amazon Linux2 cloud9 instance
-- Navigate cloud9
-- Create cloud environment
+- Enter command in cloud9 instance 
     # Step 1: Prepare the LAMP server
-  - Name: capstone project
-   # Step 2: Network settings
-  - Network (VPC): Example VPC
-  - Subnet: Public Subnet 2
-  - Click Next
-  - Create Environment
+  - sudo yum update -y
+  - sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2
+  - sudo yum install -y httpd mariadb-server
+  - sudo systemctl start httpd
+  - sudo systemctl enable httpd
+  - sudo systemctl is-enabled httpd
+   # Step 2: Download the project assets: Copy Link from the capstone project
+  - wget https://aws-tc-largeobjects.s3-us-west-2.amazonaws.com/ILT-TF-200-ACACAD-20-EN/capstone-project/Example.zip
+  - ls
+  - mkdir Example
+  - sudo unzip Example.zip -d Example/
+  - sudo cp Example/* /var/www/html/
+  - Open the Amazon EC2 console at https://console.aws.amazon.com/ec2/
+  - Check public IP of Cloud9 EC2 instance and paste into new tab(Now Webpage is not showing)
+  - Choose Instances and select your instance.(Cloud9 created Instance-Start with aws-cloud9)
+  - On the Security tab, view the inbound rules. Add HTTP protocol with 0.0.0.0/0 then again refresh your webpage it will shows the webpage
 # Task 3: 
 - Open terminal
 -     # st
        
-
- - sudo yum update -y
- - sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2
- - sudo yum install -y httpd mariadb-server
- - sudo systemctl start httpd
- - sudo systemctl enable httpd
- - sudo systemctl is-enabled httpd
       
 
       
