@@ -59,7 +59,7 @@ I applied the architectural design principles in this project to:
 # Task 3: Install a LAMP web server on Amazon Linux2 cloud9 instance
 - Navigate cloud9
 - Create cloud environment
-    # Step 1: Name environment
+    # Step 1: Prepare the LAMP server
   - Name: capstone project
    # Step 2: Network settings
   - Network (VPC): Example VPC
