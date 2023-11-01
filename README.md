@@ -57,7 +57,10 @@ I applied the architectural design principles in this project to:
   - Click Next
   - Create Environment
 # Task 3: Install a LAMP web server on Amazon Linux2 cloud9 instance
-   # Step 1: Prepare the LAMP server
+- Open terminal
+- # Step 1: Prepare the LAMP server
+      
+   # Step 1: 
       - sudo yum update -y
   - sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2
   - sudo yum install -y httpd mariadb-server
