@@ -170,7 +170,14 @@ I applied the architectural design principles in this project to:
   - Add tags
   - Add name tag and value as sami-CapstoneProject and click next
   - Review  then click Create Auto Scaling group
-
+# Task 9: Check the output by using the load balancer DNS name
+- Edit subnet groups
+    # Step 1: Final step
+  - Edit subnet groups of auto-scaling to public subnet-1 and public subnet-2
+  - Stop instances with the name Nminds
+  - Keep refreshing several times
+  - Go to Load balancer copy that DNS name and paste it into a new tab
+  
        
       
 
