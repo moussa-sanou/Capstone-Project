@@ -94,7 +94,25 @@ I applied the architectural design principles in this project to:
   - MySQL [exampledb]> show tables;
   - MySQL [exampledb]> select*from countrydata_final;
   - MySQL [exampledb]> exit;
- 
+# Task 5: Configure Parameter values in AWS systems manager
+- Navigate to AWS systems manager and create parameter
+    # Step 1: Create Parameter
+  - /example/endpoint   <rds-endpoint>
+  - /example/username  admin
+  - /example/password   password
+  - /example/database   exampledb
+   # Step 2: Modify IAM role to cloud9 instance
+  - Go to cloud9 EC2 instance and attach IAM role-  Inventory-App-Role
+  - Refresh the web page again
+  - Now you can access the database successfully
+# Task 6: Create AMI for Autoscaling(Cloud9 instance)
+- AMI on cloud9 instance
+    # Step 1: Take an AMI on cloud9 instance
+  - Select cloud9 instance   -->   actions-->i   mages and templates-->   create image
+  - Image Name-   CapstoneProjectAMI
+  - Description-    AMI for CapstoneProject
+  - Create Image
+  
 
        
       
