@@ -172,7 +172,7 @@ I applied the architectural design principles in this project to:
   - Review  then click Create Auto Scaling group
 # Task 9: Check the output by using the load balancer DNS name
 - Edit subnet groups
-    # Step 1: Final step
+    # Final step
   - Edit subnet groups of auto-scaling to public subnet-1 and public subnet-2
   - Stop instances with the name Nminds
   - Keep refreshing several times
