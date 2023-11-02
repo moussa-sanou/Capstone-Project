@@ -2,7 +2,7 @@
 # Project Description
 In this project, I had the opportunity to demonstrate my solution design skills.
 I applied the architectural design principles in this project to:
-- Deploy a PHP application that runs on an Amazon Elastic Compute Cloud (Amazon EC2) instance.
+- Deploy a PHP application running on an Amazon Elastic Compute Cloud (Amazon EC2) instance.
 - Create a database instance that the PHP application can query.
 - Create a MySQL database from an SQL dump file.
 - Update application parameters in an AWS System Manager Parameter Store.
@@ -112,7 +112,33 @@ I applied the architectural design principles in this project to:
   - Image Name-   CapstoneProjectAMI
   - Description-    AMI for CapstoneProject
   - Create Image
-  
+# Task 7: Create Load Balancer
+- Open the Amazon EC2 Console
+    # Step 1: Create Load Balancer
+  - Go to EC2 console and select Load Balancer in new tab
+  - Select Create Load Balancer
+  - Select Application Load Balancer
+  - Load balancer name- CapstoneProject-LB
+  - Network mapping
+  - VPC-Select Example VPC
+  - Mappings-Select both us-east-1a below subnet choose Public subnet1  & us-east-1b below subnet
+  - choose Public subnet2
+    # Step 2: Security groups
+  - Security groups-Select   ALBSG security group
+  - Listeners and routing
+  - Default action-Create Load Balancer
+    # Step 3: Create Target Group
+  - Specify group details
+  - Choose a target type-instance
+  - Target group name- CapstoneProject-TG
+  - VPC-Ensure Example VPC is selected then click next
+  - Register targets
+  - 2 available Target is there so click Create Target Group
+  - Come back to Load balance and refresh this Listener and routing, now we can see the created target group
+  - Select CapstoneProject-TG
+  - Then click Create Load Balancer
+  - Copy the DNS Name
+
 
        
       
