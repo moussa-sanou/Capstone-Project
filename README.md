@@ -138,7 +138,38 @@ I applied the architectural design principles in this project to:
   - Select CapstoneProject-TG
   - Then click Create Load Balancer
   - Copy the DNS Name
-
+# Task 8: Create AutoScaling
+- EC2 management console under Auto Scaling choose Auto Scaling Groups in new tab
+    # Step 1: Create Auto Scaling group
+  - Choose launch template or configuration
+  - Name
+  - Auto Scaling group name- praveen-ASG
+  - Launch template 
+  - Launch template-Choose Example-LT then modify the template
+  - Change the AMI ID we created as CapstoneProjectAMI
+  - Select Example-LT go to details   -->  Actions  -->  Modify Templates
+  - Scroll down and on Launch Templates Contents choose our CapstoneProjectAMI ID then create it
+  - Ensure the CapstoneProjectAMI ID is changed in our template then click next
+    # Step 2: Launch Instance
+  - Choose instance launch options
+  - Network
+  - Availability Zones and subnets-Select Private subnet1 & Private subnet2 then click next
+    # Step 3: Configure advanced options
+  - Load balancing - optional-Select Attach to an existing load balancer
+  - Attach to an existing load balancer
+  - Existing load balancer target groups-Select CapstoneProject-LB
+  - Health checks - Select ELB(check mark) then click next
+    # Step 4: Configure group size and scaling policies
+  - Group size -Increase the group size
+  - Desired capacity: 2
+  - Minimum capacity: 2
+  - Maximum capacity: 2
+  - Click Next
+  - Add notifications
+  - Click Next
+  - Add tags
+  - Add name tag and value as sami-CapstoneProject and click next
+  - Review  then click Create Auto Scaling group
 
        
       
