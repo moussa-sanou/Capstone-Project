@@ -65,7 +65,7 @@ I applied the architectural design principles in this project to:
   - sudo systemctl start httpd
   - sudo systemctl enable httpd
   - sudo systemctl is-enabled httpd
-   # Step 2: Download the project assets: Copy Link from the capstone project
+   # Step 2: Download the project assets Copy Link from the capstone project
   - wget https://aws-tc-largeobjects.s3-us-west-2.amazonaws.com/ILT-TF-200-ACACAD-20-EN/capstone-project/Example.zip
   - ls
   - mkdir Example
@@ -75,9 +75,27 @@ I applied the architectural design principles in this project to:
   - Check public IP of Cloud9 EC2 instance and paste into new tab(Now Webpage is not showing)
   - Choose Instances and select your instance.(Cloud9 created Instance-Start with aws-cloud9)
   - On the Security tab, view the inbound rules. Add HTTP protocol with 0.0.0.0/0 then again refresh your webpage it will shows the webpage
-# Task 3: 
-- Open terminal
--     # st
+# Task 4: Import the Data into the database
+- Enter command in cloud9 instance 
+    # Step 1: Download Database
+  - wget https://aws-tc-largeobjects.s3-us-west-2.amazonaws.com/ILT-TF-200-ACACAD-20-EN/capstone-project/Countrydatadump.sql
+  - Go to RDS dashboard now your database instance is created
+  - Copy the endpoint of DB
+  - Go to Cloud9 service to access the machine
+  - Database file is downloaded successfully
+  - Go to Security Group select Example-DB and add inbound rule for MYSQL/Aurora and source to cloud9 instance then only we can able to import the database
+  - Come back cloud9 instance
+   # Step 2: Import the file
+  - mysql -u admin -p exampledb --host <rds-endpoint> < Countrydatadump.sql
+  - It asks password then give password(copy password from master password) then hit enter
+  - Verify once again database is attached or not by using the following command
+  - mysql -u admin -p --host <endpoint> 
+  - MySQL [(none)]>  use exampledb;
+  - MySQL [exampledb]> show tables;
+  - MySQL [exampledb]> select*from countrydata_final;
+  - MySQL [exampledb]> exit;
+ 
+
        
       
 
